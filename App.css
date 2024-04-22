@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 100%;
+  min-height: 100dvh;
+
+  background: linear-gradient(248.66deg, #ff9696 0%, #8c6bae 100%);
+}
+
+.App .leftSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 60%;
+  min-height: 100dvh;
+
+  padding: 100px 0;
+}
+
+.App .rightSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 40%;
+  min-height: 100dvh;
+
+  padding: 100px 0;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+}
